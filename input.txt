@@ -1,0 +1,2 @@
+[Sinh vien] (Masv, hoten) (Masv: PK) - [Lop hoc] (MaLop, TenLop): n - 1
+[Can Bo Cong Nhan vien] (Ma so, Ho ten) - [Giang vien] (Trinh do, chuyen nganh): cha - con
