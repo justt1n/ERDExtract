@@ -80,15 +80,15 @@ class ERDExtractor:
             )
 
         elif erd_relation.relationship_type in ["1 - 1", "cha - con"]:
-            if erd_relation.relationship_type == "cha - con":
-                parent_id = erd_relation.attributes1[0]
-                return (
-                    f"[{erd_relation.entity1}]"
-                    f" ({', '.join(erd_relation.attributes1)})"
-                    f" - [{erd_relation.entity2}]"
-                    f" ({parent_id}, {', '.join(erd_relation.attributes2)})"
-                    f": {erd_relation.relationship_type}"
-                )
+            set_type = "1 - 1"
+            parent_id = erd_relation.attributes1[0]
+            return (
+                f"[{erd_relation.entity1}]"
+                f" ({', '.join(erd_relation.attributes1)})"
+                f" - [{erd_relation.entity2}]"
+                f" ({parent_id}, {', '.join(erd_relation.attributes2)})"
+                f": {set_type}"
+            )
 
             return input_str
 
